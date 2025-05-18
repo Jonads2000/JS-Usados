@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-    <header>
-        <a href="../index.html">
-            <img src="../img/logo.png" alt="logo" class="logo">
-        </a>
-        <h1> JS Usados </h1>
+    <header class="encabezado2">
+        
+        <div class="fila-superior"> 
+            <a href="../index.html">
+                <img src="../img/logo.png" alt="logo" class="logo">
+            </a>
+            <h1> JS Usados </h1>
+        </div>
+        
         <nav> 
-            <ul>
+            <ul class="navegacion">
                 <li>
                     <a href="./usados.html">Usados</a>
                 </li>
@@ -25,7 +29,7 @@
                     <a href="./quienes-somos.html">Quienes somos</a>
                 </li>
                 <li>
-                    <a href="./postventa.html">Post venta</a>
+                    <a href="./postventa.html">Postventa</a>
                 </li>
             
             </ul>
@@ -38,45 +42,74 @@
         </section>
             
         <section>
-            <form>
 
+            <form class="formulario-contacto">
+                <div class="campo-form">
+                    <label for="nombre"> Nombre y apellido:</label>
+                    <input type="text" id="nombre" name="nombre"required>
+                </div>
+                <div class="campo-form">
+                    <label for="telefono"> Telefono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="campo-form">
+                    <label for="email"> Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="campo-form">
+                    <label for="provincia"> Provincia:</label>
+                    <input type="text" id="provincia" name="provincia"required>
+                </div>
+                <div class="campo-form">
+                    <label for="ciudad"> Ciudad:</label>
+                    <input type="text" id="ciudad" name="ciudad" required>
+                </div>
+                <div class="campo-form">
+                    <label for="mensaje"> Dejanos tu mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5"required></textarea>
+                </div>
+                
+                <button type="submit"> Enviar </button>
+
+            </form>
+        </section>
+            
+
+
+
+
+                 
+                 
+
+            
                 
 
-                <label for="Nombre y apellido"> Nombre y apellido:
-                    <input type="text"></label>
-                <label for="Telefono"> Telefono:
-                    <input type="tel"></label>
-                <label for="Email"> Email:
-                    <input type="Email"></label>
-                <label for="Provincia"> Provincia:
-                    <input type="text"></label>
-                <label for="Ciudad"> Ciudad:
-                    <input type="text"></label>
-                <label for="Dejanos tu mensaje"> Dejanos tu mensaje:
-                    <input type="texarea"></label>
-                 
-                <button type="submit"> Enviar </button>
-                 
-            </form>
-                        
-        </section>
               
                 
-        <section>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1691.1621327493497!2d-60.31094256134447!3d-32.03341329349581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b42498ab6f8a9f%3A0x76497ee11f6ed359!2sEstrada%201442%2C%20E3116%20Crespo%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses!2sar!4v1745187494036!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1691.1621327493497!2d-60.31094256134447!3d-32.03341329349581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b42498ab6f8a9f%3A0x76497ee11f6ed359!2sEstrada%201442%2C%20E3116%20Crespo%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses!2sar!4v1745187494036!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de JS Usados"></iframe>
         </section>
+     
+
             
     </main>
                         
-    <footer>
-        <h3> Todos los derechos reservados </h3>
-        <img src="../img/logotipo-facebook.png" alt="facebook" class="rrss">
-        <img src="../img/instagram.png" alt="Instagram" class="rrss">
-        <img src="../img/tik-tok.png" alt="TikTok" class="rrss">
+     <footer>
+        
+        <div class="footer-content">
+            <h3 class="derechos"> Todos los derechos reservados </h3>
+            <section class="redes">
+                <h4> Nuestras redes </h4>
+                <img src="../img/logotipo-facebook.png" alt="facebook" class="rrss">
+                <img src="../img/instagram.png" alt="Instagram" class="rrss">
+                <img src="../img/tik-tok.png" alt="TikTok" class="rrss">
+            </section>
+        </div>
+        
         <img src="../img/whatsapp.png" alt="whatsapp" class="rs">
+    
     </footer>
-   
-   
+
    
     
 </body>

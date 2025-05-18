@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Usados- Inicio</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   
-    <header>
-        <a href="./index.html">
-            <img src="./img/logo.png" alt="logo" class= "logo">
-        </a>
-        <h1> JS Usados </h1>
-        <nav> 
-            <ul class="navegacion">
+    <header class="encabezado">
 
+        <div class="fila-superior">           
+          <a href="./index.html">
+            <img src="./img/logo.png" alt="logo" class= "logo">
+          </a>
+          <h1> JS Usados </h1>
+          <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+        </div>
+
+        <nav id="nav-menu"> 
+            <ul class="navegacion">
                 <li>
                     <a href="./pages/usados.html"> Usados</a>
                 </li>
@@ -26,51 +31,72 @@
                     <a href="./pages/quienes-somos.html">Quienes somos</a>
                 </li>
                 <li>
-                    <a href="./pages/postventa.html">Post venta</a>
+                    <a href="./pages/postventa.html">Postventa</a>
                 </li>
-            
             </ul>
+                
+
+            
         </nav>
     </header>
     
-    <main>
+    <main class="destacados">
+
+        <h2></i>Usados destacados<i class="fas fa-check-circle icono"></i></h2>
+          
+    <div class="filtro-autos">
+      <label for="filtro-marca">Filtrar por marca:</label>
+    <select id="filtro-marca">
+      <option value="todos">Todos</option>
+      <option value="chevrolet">Chevrolet</option>
+      <option value="volkswagen">Volkswagen</option>
+      <option value="toyota">Toyota</option>
+      <option value="ford">Ford</option>
+      <option value="nissan">Nissan</option>
+      <option value="jeep">Jeep</option>
+    
+    </select>
+    </div>
+        
 
         
-        <h2>Usados destacados</h2>
-        
-
-        
-        <section>
-            <article>
+        <section class="galeria">
+            <article class="auto">
                 <a href="./pages/usados.html#onix">
                   <img src="./img/onix.png" alt="onix">
                 </a>
+                <h3>Chevrolet Onix Joy</h3>
             </article>
-            <p>Chevrolet Onix Joy</p>
             
-            <article>
+            <article class="auto">
                 <a href="./pages/usados.html#tcross">
                   <img src="./img/tcross.jpeg" alt="tcross">
                 </a>
+                <h3>Volkswagen T-cross</h3>
+
             </article>
 
-            <p> volkswagen T-Cross</p>
-        </section>
-            
-        <section> 
-            <article>
+        
+            <article class="auto">
                 <a href="./pages/usados.html#corolla">
                    <img src="./img/corolla.png" alt="corolla">
                 </a>
+                <h3>Toyota Corolla</h3>
             </article>
-            <p>Toyota Corolla</p>
 
-            <article>
+            <article class="auto">
                 <a href="./pages/usados.html#hilux">
                   <img src="./img/hilux costado.webp" alt="hilux">
                 </a>
+                <h3>Toyota Hilux</h3>
             </article>
-            <p>Toyota Hilux</p>
+
+            <article class="auto">
+                <a href="./pages/usados.html#polo">
+                    <img src="./img/volkswagen polo.jpeg" alt="polo">
+                </a>
+                <h3> Volkswagen Polo</h3>
+            </article>
 
         </section>
         
@@ -80,23 +106,29 @@
         
         
     <footer>
-        <section>
-            <h3> Todos los derechos reservados </h3>
-        </section>
-
-        <section>
-            <h4> Nuestras redes</h4>
-            
-            <img src="./img/logotipo-facebook.png" alt="facebook" class="rrss">
-            <img src="./img/instagram.png" alt="Instagram" class="rrss">
-            <img src="./img/tik-tok.png" alt="TikTok" class="rrss">
-            <img src="./img/whatsapp.png" alt="whatsapp" class="rs">
-            
-            
-        </section>
-    </footer>
         
-            
+        <div class="footer-content">
+            <h3 class="derechos"> Todos los derechos reservados </h3>
+            <section class="redes">
+                <h4> Nuestras redes </h4>
+                <img src="./img/logotipo-facebook.png" alt="facebook" class="rrss">
+                <img src="./img/instagram.png" alt="Instagram" class="rrss">
+                <img src="./img/tik-tok.png" alt="TikTok" class="rrss">
+            </section>
+        </div>
+        
+        <img src="./img/whatsapp.png" alt="whatsapp" class="rs">
+    </footer>
+
+   <script>
+        const toggle = document.getElementById('menu-toggle');
+         const nav = document.querySelector('.navegacion');
+
+         toggle.addEventListener('click', () => {
+        nav.classList.toggle('open');
+          });
+    </script>
+          
 </body>
 </html>
 

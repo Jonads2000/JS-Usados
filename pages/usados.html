@@ -7,13 +7,19 @@
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-    <header>
-        <a href="../index.html">
-            <img src="../img/logo.png" alt="logo" class="logo">
-        </a>
-        <h1> JS Usados </h1>
-        <nav> 
-            <ul>
+    <header class="encabezado2">
+        
+        <div class="fila-superior"> 
+
+            <a href="../index.html">
+                <img src="../img/logo.png" alt="logo" class="logo">
+            </a>
+            <h1> JS Usados </h1>
+            <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+        </div>
+
+        <nav id="nav-menu"> 
+            <ul class="navegacion">
                 <li>
                     <a href="./usados.html">Usados</a>
                 </li>
@@ -24,7 +30,7 @@
                     <a href="./quienes-somos.html">Quienes somos</a>
                 </li>
                 <li>
-                    <a href="./postventa.html">Post venta</a>
+                    <a href="./postventa.html">Postventa</a>
                 </li>
             
             </ul>
@@ -33,46 +39,72 @@
 
     <main>
         <h2>Usados disponibles</h2>
-        <section> 
-            <img src="../img/onix.png" alt="carrusel" id="onix">
-            <img src="../img/tcross.jpeg" alt="carrusel" id="tcross">
-            <img src="../img/corolla.png" alt="carrusel" id="corolla">
-            <img src="../img/hilux.jpeg" alt="carrusel" id="hilux">
-        </section>
-
-        <section>
-            <img src="../img/etios.jpeg" alt="carrusel">
-            <img src="../img/volkswagen polo.jpeg" alt="carrusel">
-            <img src="../img/corolla gris.jpeg" alt="carrusel">
-            <img src="../img/amarok.jpeg" alt="carrusel">
-        </section>
-
-        <section>
-            <img src="../img/jeep compass.jpeg" alt="carrusel">
-            <img src="../img/ford fiesta.jpeg" alt="carrusel">
-            <img src="../img/chevrolet cruze.jpeg" alt="carrusel">
-            <img src="../img/s10.png" alt="carrusel">   
+        <section class="galeria">
+            
+            <article class="auto">
+                <img src="../img/onix.png" alt="carrusel" id="onix">
+            </article> 
+            <article class="auto">
+                <img src="../img/tcross.jpeg" alt="carrusel" id="tcross">
+            </article>
+            <article class="auto">
+                <img src="../img/corolla.png" alt="carrusel" id="corolla">
+            </article>
+            <article class="auto">
+                <img src="../img/hilux.jpeg" alt="carrusel" id="hilux">
+            </article>
+            <article class="auto">
+                <img src="../img/etios.jpeg" alt="carrusel">
+            </article>
+            <article class="auto">
+                <img src="../img/volkswagen polo.jpeg" alt="carrusel" id="polo">
+            </article>
+            <article class="auto">
+                <img src="../img/corolla gris.jpeg" alt="carrusel">
+            </article>
+            <article class="auto">
+                <img src="../img/amarok.jpeg" alt="carrusel">
+            </article>
+            <article class="auto">
+                <img src="../img/jeep compass.jpeg" alt="carrusel">
+            </article>
+            <article class="auto">
+                <img src="../img/ford fiesta.jpeg" alt="carrusel">
+            </article>
+            <article class="auto">
+                <img src="../img/chevrolet cruze.jpeg" alt="carrusel">
+            </article>
+            <article class="auto">
+                <img src="../img/s10.png" alt="carrusel">   
+            </article>
+            
         </section> 
-    
+
     </main>
 
     <footer>
         
-        <h3> Todos los derechos reservados </h3>
-            
-        <img src="../img/logotipo-facebook.png" alt="facebook" class="rrss">
-        <img src="../img/instagram.png" alt="Instagram" class="rrss">
-        <img src="../img/tik-tok.png" alt="TikTok" class="rrss">
-        <img src="../img/whatsapp.png" alt="whatsapp" class="rs">
-            
-            
-    </footer>
-            
+        <div class="footer-content">
+            <h3 class="derechos"> Todos los derechos reservados </h3>
+            <section class="redes">
+                <h4> Nuestras redes </h4>
+                <img src="../img/logotipo-facebook.png" alt="facebook" class="rrss">
+                <img src="../img/instagram.png" alt="Instagram" class="rrss">
+                <img src="../img/tik-tok.png" alt="TikTok" class="rrss">
+            </section>
+        </div>
         
+        <img src="../img/whatsapp.png" alt="whatsapp" class="rs">
     
-   
-   
-   
-    
+    </footer>
+
+       <script>
+           const toggle = document.getElementById('menu-toggle');
+           const nav = document.querySelector('.navegacion');
+           toggle.addEventListener('click', () => {
+           nav.classList.toggle('open');
+            });
+        </script>
+
 </body>
 </html>

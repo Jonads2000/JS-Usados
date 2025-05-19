@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Usados - Usados</title>
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/carrusel.css"/>
 </head>
 <body>
     <header class="encabezado2">
@@ -39,6 +40,7 @@
 
     <main>
         <h2>Usados disponibles</h2>
+
         <section class="galeria">
             
             <article class="auto">
@@ -50,9 +52,18 @@
             <article class="auto">
                 <img src="../img/corolla.png" alt="carrusel" id="corolla">
             </article>
-            <article class="auto">
-                <img src="../img/hilux.jpeg" alt="carrusel" id="hilux">
+            
+            <article class="auto" id="hilux">
+             <div class="carrusel">
+              <img src="../img/hilux.jpeg" alt="Toyota Hilux 1" class="active carousel-img"/>
+              <img src="../img/hilux2.webp" alt="Toyota Hilux 2" class="carousel-img"/>
+              <img src="../img/hilux3.webp" alt="Toyota Hilux 3" class="carousel-img" />
+              <button class="btn-carrusel btn-prev">&#10094;</button>
+              <button class="btn-carrusel btn-next">&#10095;</button>
+             </div>
+             <h3>Toyota Hilux</h3>
             </article>
+            
             <article class="auto">
                 <img src="../img/etios.jpeg" alt="carrusel">
             </article>
@@ -104,7 +115,38 @@
            toggle.addEventListener('click', () => {
            nav.classList.toggle('open');
             });
+
+
+            document.querySelectorAll(".carrusel").forEach((carrusel) => {
+            const imgs = carrusel.querySelectorAll(".carousel-img");
+            const prev = carrusel.querySelector(".btn-prev");
+            const next = carrusel.querySelector(".btn-next");
+            let current = 0;
+
+            function showImage(index) {
+            imgs.forEach((img, i) => {
+            img.classList.toggle("active", i === index);
+            });
+            }
+
+            if (prev && next && imgs.length > 0) {
+            prev.addEventListener("click", () => {
+            current = (current - 1 + imgs.length) % imgs.length;
+            showImage(current);
+            });
+
+            next.addEventListener("click", () => {
+            current = (current + 1) % imgs.length;
+            showImage(current);
+            });
+            }
+            });
+
         </script>
+
+        
+
+
 
 </body>
 </html>

@@ -1,0 +1,94 @@
+.postventa {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+
+  h2 {
+    font-size: 36px;
+    text-align: center;
+    color: #0d3b66;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .contenido-postventa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    .texto {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .imagen {
+      img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  .servicios {
+    margin-top: 50px;
+
+    h3 {
+      font-size: 24px;
+      color: #0d3b66;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        font-size: 16px;
+        color: #444;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        position: relative;
+
+        &::before {
+          content: "✔";
+          position: absolute;
+          left: 0;
+          color: #1078e7;
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+  .postventa {
+    padding: 20px 10px;
+
+    h2 {
+      font-size: 28px;
+    }
+
+    .contenido-postventa {
+      grid-template-columns: 1fr;
+      gap: 20px;
+
+      .texto {
+        font-size: 16px;
+      }
+    }
+
+    .servicios {
+      h3 {
+        font-size: 20px;
+      }
+
+      ul li {
+        font-size: 14px;
+      }
+    }
+  }
+}

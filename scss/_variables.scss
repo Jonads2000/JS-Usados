@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height:100vh;
+  font-family: Roboto;
+  background-color: rgb(60, 87,100);
+  background-image: url(../img/fondo.png);
+  background-size: 1600px;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+@mixin mobile{
+    @media(max-width: 1024px){
+        @content
+    }
+};

@@ -6,13 +6,13 @@
 }
 
 body{
-  height:100vh;
+  min-height:100vh;
   font-family: Roboto;
   background-color: rgb(60, 87,100);
   background-image: url(../img/fondo.png);
-  background-size: 1600px;
-  background-position-x: center;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 @mixin mobile{

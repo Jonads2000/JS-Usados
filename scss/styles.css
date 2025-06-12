@@ -5,9 +5,8 @@
   padding: 0;
 }
 
-
 body{
-    height:100vh;
+    min-height:100vh;
     font-family: Roboto;
     background-color: rgb(60, 87,100);
     background-image: url(../img/fondo.png);
@@ -68,7 +67,7 @@ li{
   box-shadow: 0 2px 5px rgba(0,0,0, 0.1);
 
 }
-    
+
 .navegacion a{ 
   color:#333;
   text-decoration: none;
@@ -228,7 +227,6 @@ li{
 .nosotros{
   padding: 40px;
   background-color: #1079ca;
- 
 }
 
 footer {
@@ -288,7 +286,7 @@ footer {
     text-align: center;
     cursor: pointer;
     font-size: 30px;
-    box-shadow: 0px 1px 10px rgb(0,0,0,0,3)
+    box-shadow: 0px 1px 10px rgb(0,0,0,0,3);
 } 
 
 .caja {
@@ -305,7 +303,7 @@ footer {
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
 }
-   
+
 .turnos {
   max-width: 400px;
   margin: 20px auto 60px auto;
@@ -449,4 +447,3 @@ h2{
   }
 }
 
-    

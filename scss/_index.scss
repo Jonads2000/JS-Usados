@@ -2,6 +2,7 @@
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 40px ;
 
   h2 {
     text-align: center;
@@ -62,10 +63,12 @@
 
 .filtro-autos {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 1rem ;
+  padding: 1rem ;
   align-items: center;
+  max-width: 350px;
   margin-bottom: 30px;
-  gap: 10px;
   font-family: 'Poppins', sans-serif;
 
   label {
@@ -73,11 +76,17 @@
     color: #0d3b66;
   }
 
-  select {
+  select, input{
     padding: 8px 12px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    cursor: pointer;
+  }
+  .filtro-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 }
 
@@ -107,6 +116,8 @@
   }
 
   .filtro-autos {
+    max-width: 350px;
+    width: 100%;
     flex-direction: column;
     gap: 5px;
     font-size: 14px;

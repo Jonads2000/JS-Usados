@@ -6,17 +6,20 @@
     <title>JS Usados- Inicio</title>
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="description" content="Compra y venta de autos usados seleccionados. JS Usados te ofrece calidad, confianza y los mejores precios.">
+    <meta name="keywords" content="autos usados, compra venta, JS Usados, vehículos en venta, autos en Argentina">
+    <meta name="author" content="Jonathan Schindler">
 </head>
 <body>
-  
+
     <header class="encabezado">
 
         <div class="fila-superior">           
-          <a href="./index.html">
+        <a href="./index.html">
             <img src="./img/logo.png" alt="logo" class= "logo">
-          </a>
-          <h1> JS Usados </h1>
-          <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+        </a>
+        <h1> JS Usados </h1>
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
         </div>
 
         <nav id="nav-menu"> 
@@ -40,44 +43,77 @@
     <main>
         <section class="destacados">
             <h2>Usados destacados <i class="fas fa-check-circle icono"></i></h2>
-          
+        
             <div class="filtro-autos">
-              <label for="filtro-marca">Filtrar por marca:</label>
+                <div class="filtro-item">    
+                <label for="filtro-marca">Filtrar por marca:</label>
                 <select id="filtro-marca">
-                  <option value="todos">Todos</option>
-                  <option value="chevrolet">Chevrolet</option>
-                  <option value="volkswagen">Volkswagen</option>
-                  <option value="toyota">Toyota</option>
-                  <option value="ford">Ford</option>
-                  <option value="nissan">Nissan</option>
-                  <option value="jeep">Jeep</option>
-                  
+                <option value="todos">Todos</option>
+                <option value="chevrolet">Chevrolet</option>
+                <option value="volkswagen">Volkswagen</option>
+                <option value="toyota">Toyota</option>
+                <option value="ford">Ford</option>
+                <option value="nissan">Nissan</option>
+                <option value="jeep">Jeep</option>
+                <option value="renault">Renault</option>
+                <option value="audi">Audi</option>
                 </select>
+                </div>  
+
+                <div class="filtro-item">
+                <label for="filtro-año">Filtrar por año:</label>
+                <select id="filtro-año">
+                <option value="todos">Todos</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                </select>
+                </div>
+                
+                <label for="precio-min">Precio mínimo:</label>
+                <input type="number" id="precio-min" placeholder="Ej: 2000000">
+
+                <label for="precio-max">Precio máximo:</label>
+                <input type="number" id="precio-max" placeholder="Ej: 8000000">
+
             </div>
         </section>  
         
         <section class="galeria">
- 
+
             <article class="auto">
                 <a href="./pages/usados.html#tcross">
-                  <img src="./img/tcross.jpeg" alt="tcross">
+                <img src="./img/tcross.jpeg" alt="Volkswagen T-Cross">
                 </a>
-                <h3>Volkswagen T-cross</h3>
-
+                <h3>Volkswagen T-Cross</h3>
+                <p><strong>Versión:</strong> Trendline 1.6 MSI</p>
+                <p><strong>Año:</strong> 2020 </p>
+                <p><strong>Kms:</strong> 85.000 </p>
             </article>
             
             <article class="auto">
                 <a href="./pages/usados.html#corolla">
-                   <img src="./img/corolla.png" alt="corolla">
+                <img src="./img/corolla.png" alt="Toyota Corolla">
                 </a>
                 <h3>Toyota Corolla</h3>
+                <p><strong>Versión:</strong> HV 1.8 SEG ECVT</p>
+                <p><strong>Año:</strong> 2022 </p>
+                <p><strong>Kms:</strong> 148.000 </p>
             </article>
 
             <article class="auto">
-                <a href="./pages/usados.html#hilux">
-                  <img src="./img/hilux.jpeg" alt="hilux">
+                <a href="./pages/usados.html#frontier">
+                <img src="./img/nissanfrontier.webp" alt="Nissan Frontier">
                 </a>
-                <h3>Toyota Hilux</h3>
+                <h3>Nissan Frontier</h3>
+                <p><strong>Versión:</strong> PRO4X 4X4</p>
+                <p><strong>Año:</strong> 2022 </p>
+                <p><strong>Kms:</strong> 17.250 </p>
             </article>
 
             <article class="auto">
@@ -85,6 +121,9 @@
                     <img src="./img/etios1.webp" alt="toyota etios">
                 </a>
                 <h3> Toyota Etios</h3>
+                <p><strong>Versión:</strong> X 1.5 6M/T</p>
+                <p><strong>Año:</strong> 2018 </p>
+                <p><strong>Kms:</strong> 78.180 </p>
             </article>
 
         </section>
@@ -108,29 +147,19 @@
             </section>
         </div>
         
-        <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer">
-            <img src="./img/whatsapp.png" alt="whatsapp" class="rs whatsapp-btn">
+        <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer" class="whatsapp-btn">
+            <img src="./img/whatsapp.png" alt="whatsapp" class="rs">
         </a> 
     </footer>
 
         <script>
-         const toggle = document.getElementById('menu-toggle');
-         const nav = document.querySelector('.navegacion');
+        const toggle = document.getElementById('menu-toggle');
+        const nav = document.querySelector('.navegacion');
 
-         toggle.addEventListener('click', () => {
-         nav.classList.toggle('open');
-          });
+        toggle.addEventListener('click', () => {
+        nav.classList.toggle('open');
+        });
         </script>
-          
+        
 </body>
 </html>
-
-
-        
-            
-        
-
-
-    
-    
-    

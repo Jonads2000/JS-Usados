@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Usados - Quienes Somos</title>
-    <link rel="stylesheet" href="../styles/styles.css"><meta name="description" content="Conocé más sobre JS Usados: nuestra historia, valores y compromiso con la calidad.">
+    <link rel="stylesheet" href="../css/styles.css"><meta name="description" content="Conocé más sobre JS Usados: nuestra historia, valores y compromiso con la calidad.">
     <meta name="keywords" content="quienes somos, sobre nosotros, JS Usados, historia, confianza, empresa de autos">
     <meta name="author" content="Jonathan Schindler">
 </head>
@@ -19,20 +19,23 @@
             <h1> JS Usados </h1>
             <button class="menu-toggle" id="menu-toggle">&#9776;</button>
         </div>
-
+        
         <nav> 
             <ul class="navegacion">
                 <li>
-                    <a href="usados.html">Usados</a>
+                    <a href="../index.html">Inicio</a>
                 </li>
                 <li>
-                    <a href="contacto.html">Contacto</a>
+                    <a href="./usados.html">Usados</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">Contacto</a>
                 </li>
                 <li>
                     <a href="./quienes-somos.html">Quienes somos</a>
                 </li>
                 <li>
-                    <a href="postventa.html">Postventa</a>
+                    <a href="./postventa.html">Postventa</a>
                 </li>
             
             </ul>
@@ -40,14 +43,40 @@
     </header>
 
     <main>
-        <h2>Sobre nosotros</h2>
-        <p class="nosotros"> 
-            <strong>
-                Usados, somos un equipo apasionado por el mundo automotriz, comprometido en ofrecer vehículos de calidad y un servicio al cliente excepcional. Nuestra historia comenzó en el año 2025, con la visión de proporcionar una alternativa confiable y accesible para quienes buscan comprar o vender autos usados.
-                Nuestra misión es brindar a nuestros clientes una experiencia de compra y venta de vehículos transparente, segura y satisfactoria.
-                Nuestro objetivo es ser reconocidos como líderes en el mercado de autos usados, destacándonos por nuestra integridad y compromiso con la calidad.
-            </strong> 
-        </p>
+        <section class="quienes-somos">
+            <div class="contenedor">
+                <div class="texto">
+                    <h2>Sobre Nosotros</h2>
+                    <p>
+                        En <strong>JS Usados</strong>, somos un equipo apasionado por el mundo automotriz, con un fuerte compromiso por brindar vehículos de calidad y una atención al cliente que marque la diferencia.
+                    </p>
+                    <p>
+                        Nuestra historia comenzó en 2025, cuando yo, <strong>Jonathan Schindler</strong>, fundé este proyecto con una visión clara: ofrecer una alternativa confiable, accesible y transparente para quienes buscan comprar o vender autos usados.
+                    </p>
+                    <p>
+                        Mi pasión por los autos y el deseo de crear una experiencia distinta me impulsaron a formar un equipo honesto, profesional y cercano, que acompaña a cada cliente en todo el proceso, como si fuera propio.
+                    </p>
+                    <h3>Nuestra Misión</h3>
+                    <p>
+                        Brindar a cada persona una experiencia de compra y venta de vehículos segura, clara y totalmente satisfactoria. Queremos que nuestros clientes se sientan respaldados antes, durante y después de cada  operación.
+                    </p>
+                    <h3>Nuestra Visión</h3>
+                    <p>
+                        Ser referentes en el mercado de autos usados, reconocidos por nuestra integridad, transparencia y el compromiso con la calidad. No solo vendemos vehículos, sino confianza sobre ruedas.
+                    </p>
+                    <h3>Nuestros Valores</h3>
+                    <ul>
+                        <li><strong>Transparencia:</strong> Información clara, precios reales, sin sorpresas.</li>
+                        <li><strong>Compromiso:</strong> Estamos presentes en cada paso del camino.</li>
+                        <li><strong>Calidad:</strong> Seleccionamos y revisamos cada unidad con responsabilidad.</li>
+                        <li><strong>Cercanía:</strong> Escuchamos, entendemos y acompañamos a cada cliente como si fuera el primero.</li>
+                    </ul>
+                </div>
+                <div class="imagen-equipo">
+                    <img src="../img/equipo-de-trabajo.png" alt=" Imagen de miembros del equipo de trabajo">
+                </div>
+            </div>        
+        </section>   
     </main>
 
     <footer>
@@ -67,7 +96,7 @@
                 </a>
             </section>
         </div>
-            <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer" class="whatsapp-btn">
                 <img src="../img/whatsapp.png" alt="whatsapp" class="rs">
             </a> 
 

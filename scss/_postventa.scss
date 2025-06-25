@@ -3,7 +3,7 @@
 
   h2,
   h3 {
-    color: rgb(0, 217, 255);
+    color: rgb(0, 145, 255);
     text-align: center;
     font-weight: 700;
     margin-top: 40px;
@@ -26,7 +26,7 @@
     line-height: 1.6;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); // mejora contraste
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   }
 
   .turnos {
@@ -48,7 +48,8 @@
         color: rgb(11, 75, 212);
       }
 
-      input {
+      input,
+      select {
         width: 100%;
         padding: 10px;
         border-radius: 6px;
@@ -61,11 +62,11 @@
           outline: none;
           box-shadow: 0 0 5px rgba(11, 75, 212, 0.5);
         }
+      }
 
-        &::placeholder {
-          color: #999;
-          font-style: italic;
-        }
+      input::placeholder {
+        color: #999;
+        font-style: italic;
       }
     }
 
@@ -78,6 +79,7 @@
       font-weight: bold;
       cursor: pointer;
       transition: background-color 0.3s ease, transform 0.2s ease;
+      transform-origin: center;
 
       &:hover {
         background-color: #125a9c;
@@ -106,7 +108,8 @@
     .turnos {
       margin-top: 30px;
 
-      .campo-form input {
+      .campo-form input,
+      .campo-form select {
         font-size: 15px;
       }
 
@@ -117,3 +120,4 @@
     }
   }
 }
+
